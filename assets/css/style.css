@@ -123,3 +123,26 @@ textarea {
   margin-bottom: 15px;
   box-sizing: border-box;
 }
+
+@media (max-width: 600px) {
+  .form-row {
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+
+  input,
+  select {
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  #add-btn {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
