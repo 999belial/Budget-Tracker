@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Budget-Tracker</title>
+    <link rel="icon" href="./assets/img/icon_bu.jpg" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header-wrapper">
+        <h1>Budget-Tracker</h1>
+        <p>Verfolge deine Ausgaben mit Leichtigkeit</p>
+      </div>
+
+      <div class="input-card">
+        <div class="form-row">
+          <select id="category">
+            <option>Allgemein</option>
+            <option>Lebensmittel</option>
+            <option>Transport</option>
+            <option>Einkaufen</option>
+            <option>Unterhaltung</option>
+            <option>Rechnungen</option>
+            <option>Gesundheit</option>
+          </select>
+          <input type="text" id="name" placeholder="Kaffee, Lebensmittel..." />
+          <input type="number" id="amount" placeholder="0.00" />
+        </div>
+        <button id="add-btn">+ Ausgabe hinzufügen</button>
+      </div>
+
+      <table id="expense-table">
+        <thead>
+          <tr>
+            <th>Datum</th>
+            <th>Kategorie</th>
+            <th>Name</th>
+            <th>Betrag</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="expense-list"></tbody>
+        <tfoot>
+          <tr>
+            <td colspan="3"><strong>Gesamt</strong></td>
+            <td id="total-amount"><strong>0.00 €</strong></td>
+            <td></td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+    <footer class="footer">
+      <p>© 2026 Budget-Tracker. Alle Rechte vorbehalten.</p>
+      <div class="footer-links">
+        <a href="./impressum.html">Impressum</a>
+        <a href="./datenschutz.html">Datenschutz</a>
+      </div>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
